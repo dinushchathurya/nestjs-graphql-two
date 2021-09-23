@@ -9,7 +9,7 @@ const config: MysqlConnectionOptions = {
     database: "nestjs_graphql_two",
     synchronize: true,
     logging: true,
-    entities: ['dist/src/**/*.entity.js'],
+    entities: ['dist/src/**/*.entity{.ts,.js}'],
     migrations: [
         'dist/src/migrations/*.js'
     ],
