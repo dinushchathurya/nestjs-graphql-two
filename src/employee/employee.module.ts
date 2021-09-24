@@ -8,7 +8,8 @@ import { Employee } from './entities/employee.entity';
   imports: [ 
     TypeOrmModule.forFeature(
       [Employee]
-    )],
+    )
+  ],
   providers: [
     EmployeeService, 
     EmployeeResolver

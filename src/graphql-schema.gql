@@ -1,0 +1,40 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Employee {
+  id: String!
+  firstName: String!
+  lastName: String!
+  designation: String!
+  city: String
+}
+
+type Project {
+  id: String!
+  name: String!
+  code: Int!
+}
+
+type Query {
+  findAllEmployees: [Employee!]!
+  getAllProjects: [Project!]!
+  project(id: String!): Project!
+}
+
+type Mutation {
+  createEmployee(employee: CreateEmployeeInput!): Employee!
+  createProject(createProjectInput: CreateProjectInput!): Project!
+}
+
+input CreateEmployeeInput {
+  firstName: String!
+  lastName: String!
+  designation: String!
+  city: String
+}
+
+input CreateProjectInput {
+  name: String!
+  code: Int!
+}
